@@ -1,5 +1,9 @@
-.App {
-  text-align: center;
+.App { width: 30%;
+  display:grid; 
+  background:black;
+  align-items: center;
+  margin-left: 350px;
+  margin-top: 15px;
 }
 
 .App-logo {
@@ -27,12 +31,72 @@
 .App-link {
   color: #61dafb;
 }
+.body{
+  grid-template-areas:"bx1 bx2" "bx3 bx4" ;
+}
+button {
+  display: block;
+  background: gray;
+  padding: 15px;
+  cursor: pointer;
+}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.display {
+  color: white;
+  text-align: center;
+  
+
+}
+
+.Memory-display{
+  padding-top: 10px;
+  background: blue;
+  margin: 15px;
+  border: white;
+}
+
+.Result-display{
+  padding-top: 10px;
+  background: rgba(8, 8, 212, 0.377);
+  margin: 15px;
+  margin-top: 0;
+  border: white;}
+.former-display{
+  padding-top: 10px;
+  background: rgba(27, 27, 177, 0.377);
+  margin: 15px;
+  margin-top: 0;
+  border: white;
+}
+.current-display{
+  padding-top: 10px;
+  background:turquoise;
+  margin: 15px;
+  margin-top: 0;
+  border: white;
+}
+.keyboardm{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.keyboard{
+  width: 35%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  align-content: center;
+}
+.keyboardop{
+  display: column;
+  margin-left: 180px;
+  margin-right: 10px;
+  width: 35%;
 }
